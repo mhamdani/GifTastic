@@ -40,7 +40,7 @@ $("#add-celeb").on("click", function(event) {
 // GET celebrity Gifs when their buttons are clicked
 function getCelebGifs() {
   var person = $(this).attr("data-name");
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     person + "&api_key=dc6zaTOxFJmzC&limit=10";
 
   $.ajax({
